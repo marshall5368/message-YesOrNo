@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Londrina+Shadow&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    pad: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --darkmode-background:#3C3633;
+    --darktext:#EEEDEB;
+    --lightmode-background:#E0CCBE;
+    --ligthtext:#3C3633;
+}
+body{
+    height: 100vh;
+    background-color: var(--lightmode-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 50rem;
+    height: 40vh;
+    color: var(--ligthtext);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(17px) saturate(200%);
+    -webkit-backdrop-filter: blur(17px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.184);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.container h1{
+    margin-top: 2.5rem;
+}
+.textinputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 40rem;
+    width: 40rem;
+    gap: 2rem;
+    color: var(--ligthtext);
+   
+}
+.iptn input{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.iptn button{
+    width: auto;
+    font-size: 1.4rem;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    color:var(--ligthtext) ;
+}
+.iptn{
+    display: flex;
+    gap: 1rem;
+}
+.textinputs h3{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--lighttext);
+}
+.fa-lightbulb{
+    font-size: 2rem;
+    position: absolute;
+    right: 30rem;
+    top: 20rem;
+    z-index: 1;
+    cursor: pointer;
+    color: #FFC94A;
+}
+@media screen and (max-width:420px) {
+    .container{
+        width: 40rem;
+    }
+    .fa-lightbulb{
+        right: 3rem;
+        top: 20rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .container{
+        width: 20rem;
+    }
+    .textinputs{
+        width: 10rem;
+    }
+    .textinputs h3{
+        font-size: 20px;
+    }
+    .iptn input{
+        width: 10rem;
+       
+    }
+    .iptn{
+        font-size: 1rem
+    }
+    .fa-lightbulb{
+        right: 3rem;
+        top: 18.5rem;
+    }
+}
